@@ -1,0 +1,38 @@
+* { 
+  * margin: 0; 
+  * padding: 0; 
+  * box-sizing: border-box; 
+} 
+
+.body { 
+  display: flex; 
+  flex-direction: row;
+  width: 100%; 
+  height: 100%; 
+} 
+
+.image {
+  height: 100vh; 
+  width: 30%; 
+}
+
+.form-content { 
+  height: 100vh; 
+  width: 70%; 
+} 
+
+#banner_img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+} 
+
+.header_text { 
+  width: 55ch; 
+}
+
+fieldset { 
+  display: flex; 
+  flex-direction: column; 
+  width: inherit;  
+} 
