@@ -7,18 +7,22 @@
 .body { 
   display: flex; 
   flex-direction: row;
-  width: 100%; 
-  height: 100%; 
+  width: 100vw; 
+  height: 100vh; 
+  position: absolute; 
 } 
 
 .image {
+  display: flex; 
   height: 100vh; 
   width: 30%; 
 }
 
-.form-content { 
+.form_content { 
   height: 100vh; 
   width: 70%; 
+  display: flex; 
+  flex-direction: column;
 } 
 
 #banner_img { 
@@ -31,8 +35,33 @@
   width: 55ch; 
 }
 
-fieldset { 
+.form_body { 
+  display: flex; 
+  flex-direction: row; 
+  width: clamp(30vw, 70vw, 70vw);  
+  height: 100%;  
+} 
+
+.inputs { 
+  display: flex; 
+  height: 100%; 
+  width: 100%; 
+  flex-direction: column; 
+}
+
+
+.form_inputs { 
+  display: flex; 
+  flex-direction: row;
+ height: 100vh; 
+} 
+
+.form_row {
   display: flex; 
   flex-direction: column; 
-  width: inherit;  
-} 
+  margin: 1em;
+}
+
+.form_body > div { 
+  gap: 2em; 
+}
