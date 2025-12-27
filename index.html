@@ -35,11 +35,13 @@
                 <input type="text" name="first_name" id="first_name"> </div>
               <div class="form_row">
                 <label for="email">EMAIL</label> 
-                <input id="email" name="email" type="email">
+                <input id="email" name="email" type="email"
+                pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
               </div>
               <div class="form_row">
                 <label for="password">PASSWORD</label> 
-                <input id="password" name="password" type="password">
+                <input id="password" name="password" type="password"
+                minlength="8" maxlength="16" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required> 
               </div>
             </div>
             <div>
@@ -49,18 +51,22 @@
                 </div>
                 <div class="form_row">
                   <label for="phone_number">PHONE NUMBER</label>
-                  <input id="phone_number" name="phone_number" type="number">
+                  <input id="phone_number" name="phone_number" type="tel"
+                  maxlength="12" minlength="10" pattern="/\^(?:\+27|27|0)[6-8][0-9]{8}$/">
                 </div>
                 <div class="form_row">
                   <label for="confirm_pwd">CONFIRM PASSWORD</label>
-                  <input id="confirm_pwd" type="password" name="password">
+                  <input id="confirm_pwd" type="password" name="password"
+                             minlength="8" maxlength="16"
+                             pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                             required>
                 </div>
             </div> 
           </div>
           </div> 
           <div class="form_footer">
             <button>Create Account</button> 
-            <p>Already have an account?<a href="#">Log in</a><p>
+            <p>Already have an account? <a href="#">Log in</a><p>
           </div> 
         </form>
       </div>
